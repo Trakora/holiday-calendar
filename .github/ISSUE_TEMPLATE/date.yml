@@ -1,0 +1,43 @@
+name: Date missing or wrong
+description: A public holiday or school holiday is missing, wrong or in the wrong place.
+title: "[DE] "
+labels: [data]
+body:
+  - type: markdown
+    attributes:
+      value: Please replace DE in the title with the country code. One issue per change.
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: Date or period, e.g. 2028-06-17 or 2027-07-29/2027-09-11
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: Country, state or municipality (with its official code if you know it)
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What is wrong
+      description: What the data says now and what it should say.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Link to the law, official gazette or announcement.
+    validations:
+      required: true
+  - type: checkboxes
+    id: license
+    attributes:
+      label: License
+      options:
+        - label: I agree that this information is published under CC BY 4.0.
+          required: true

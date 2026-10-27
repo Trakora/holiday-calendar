@@ -1,0 +1,19 @@
+calendar_profile_id,country_code,subdivision_code,name,name_local,subdivision_name,subdivision_name_local,school_holidays_from,school_holidays_until
+DE-BB,DE,DE-BB,Brandenburg,Brandenburg,Brandenburg,Brandenburg,2009-08-01,2029-07-31
+DE-BE,DE,DE-BE,Berlin,Berlin,Berlin,Berlin,2009-08-01,2029-07-31
+DE-BW,DE,DE-BW,Baden-Württemberg,Baden-Württemberg,Baden-Württemberg,Baden-Württemberg,2009-08-01,2029-07-31
+DE-BY,DE,DE-BY,"Bavaria, municipalities without Assumption Day","Bayern, Gemeinden ohne Mariä Himmelfahrt",Bavaria,Bayern,2009-08-01,2029-07-31
+DE-BY-AU,DE,DE-BY,Augsburg,Augsburg,Bavaria,Bayern,2009-08-01,2029-07-31
+DE-BY-MH,DE,DE-BY,"Bavaria, municipalities with Assumption Day","Bayern, Gemeinden mit Mariä Himmelfahrt",Bavaria,Bayern,2009-08-01,2029-07-31
+DE-HB,DE,DE-HB,Bremen,Bremen,Bremen,Bremen,2009-08-01,2029-07-31
+DE-HE,DE,DE-HE,Hesse,Hessen,Hesse,Hessen,2009-08-01,2029-07-31
+DE-HH,DE,DE-HH,Hamburg,Hamburg,Hamburg,Hamburg,2009-08-01,2029-07-31
+DE-MV,DE,DE-MV,Mecklenburg-Western Pomerania,Mecklenburg-Vorpommern,Mecklenburg-Western Pomerania,Mecklenburg-Vorpommern,2009-08-01,2029-07-31
+DE-NI,DE,DE-NI,Lower Saxony,Niedersachsen,Lower Saxony,Niedersachsen,2009-08-01,2029-07-31
+DE-NW,DE,DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,North Rhine-Westphalia,Nordrhein-Westfalen,2009-08-01,2029-07-31
+DE-RP,DE,DE-RP,Rhineland-Palatinate,Rheinland-Pfalz,Rhineland-Palatinate,Rheinland-Pfalz,2009-08-01,2029-07-31
+DE-SH,DE,DE-SH,Schleswig-Holstein,Schleswig-Holstein,Schleswig-Holstein,Schleswig-Holstein,2009-08-01,2029-07-31
+DE-SL,DE,DE-SL,Saarland,Saarland,Saarland,Saarland,2009-08-01,2029-07-31
+DE-SN,DE,DE-SN,Saxony,Sachsen,Saxony,Sachsen,2009-08-01,2029-07-31
+DE-ST,DE,DE-ST,Saxony-Anhalt,Sachsen-Anhalt,Saxony-Anhalt,Sachsen-Anhalt,2009-08-01,2029-07-31
+DE-TH,DE,DE-TH,Thuringia,Thüringen,Thuringia,Thüringen,2009-08-01,2029-07-31

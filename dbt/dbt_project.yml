@@ -1,0 +1,13 @@
+name: trakora_holiday_calendar
+version: "1.0.0"
+config-version: 2
+require-dbt-version: [">=1.8.0", "<2.0.0"]
+
+# Where the holiday calendar tables were loaded, e.g. with the dlt source in this repo.
+vars:
+  holiday_calendar_database: null
+  holiday_calendar_schema: holiday_calendar
+
+models:
+  trakora_holiday_calendar:
+    +materialized: view

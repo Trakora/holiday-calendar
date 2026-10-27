@@ -1,0 +1,55 @@
+version: 2
+
+sources:
+  - name: holiday_calendar
+    description: Trakora holiday calendar, https://trakora.com/holiday-calendar
+    database: "{{ var('holiday_calendar_database') or target.database }}"
+    schema: "{{ var('holiday_calendar_schema') }}"
+    tables:
+      - name: dim_date
+        description: One row per day with everything that is the same everywhere.
+        columns:
+          - name: date
+            data_tests: [unique, not_null]
+      - name: dim_country
+        description: Countries with time zone and weekend.
+        columns:
+          - name: country_code
+            data_tests: [unique, not_null]
+      - name: dim_region
+        description: Regions, in Germany every municipality.
+        columns:
+          - name: region_id
+            data_tests: [unique, not_null]
+      - name: bridge_region_profile
+        description: Which calendar profile a region has, and when.
+        data_tests:
+          - trakora_holiday_calendar.unique_combination:
+              columns: [region_id, valid_from]
+      - name: fact_calendar_day
+        description: One day per calendar profile with public and school holidays, working days and bridge days.
+        data_tests:
+          - trakora_holiday_calendar.unique_combination:
+              columns: [calendar_profile_id, date]
+      - name: dim_calendar_profile
+        description: The calendar profiles. All regions of a profile have the same holidays.
+        columns:
+          - name: calendar_profile_id
+            data_tests: [unique, not_null]
+      - name: dim_holiday
+        description: Public and school holidays, one row per holiday and country.
+        data_tests:
+          - trakora_holiday_calendar.unique_combination:
+              columns: [country_code, holiday_id]
+      - name: holiday_rule
+        description: The rules the public holidays are calculated from, with legal basis.
+      - name: school_holiday_period
+        description: School holidays as periods.
+        data_tests:
+          - trakora_holiday_calendar.unique_combination:
+              columns: [country_code, applies_to, start_date]
+      - name: agg_population_day
+        description: Share of the population with a public holiday and with school holidays, per day.
+        data_tests:
+          - trakora_holiday_calendar.unique_combination:
+              columns: [region, date]

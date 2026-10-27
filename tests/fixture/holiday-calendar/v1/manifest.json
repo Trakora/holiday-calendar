@@ -1,0 +1,1041 @@
+{
+  "dataset": "Trakora Holiday Calendar",
+  "schema_version": 1,
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "attribution": "Trakora Holiday Calendar, CC BY 4.0. Contains data from: Federal Statistical Office of Germany (Destatis), municipality register and Census 2022",
+  "version": "2026.02.01",
+  "release_seq": 2,
+  "released_at": "2026-10-27T09:51:45+00:00",
+  "first_date": "2027-01-01",
+  "last_date": "2027-12-31",
+  "database": {
+    "path": "latest/holiday_calendar.duckdb",
+    "sha256": "f0730272f613fc376262a058c09b952327afc77dcd31153a77a6c1b42dd30fe4",
+    "bytes": 2895872
+  },
+  "tables": [
+    {
+      "name": "dim_date",
+      "description": "One row per day with everything that is the same everywhere.",
+      "primary_key": [
+        "date"
+      ],
+      "rows": 365,
+      "columns": [
+        {
+          "name": "date_key",
+          "type": "INTEGER",
+          "description": "Date as integer YYYYMMDD, key for BI tools"
+        },
+        {
+          "name": "date",
+          "type": "DATE",
+          "description": "Date"
+        },
+        {
+          "name": "year",
+          "type": "INTEGER",
+          "description": "Year"
+        },
+        {
+          "name": "quarter",
+          "type": "INTEGER",
+          "description": "Quarter 1 to 4"
+        },
+        {
+          "name": "month",
+          "type": "INTEGER",
+          "description": "Month 1 to 12"
+        },
+        {
+          "name": "day",
+          "type": "INTEGER",
+          "description": "Day of month"
+        },
+        {
+          "name": "day_of_year",
+          "type": "INTEGER",
+          "description": "Day of year"
+        },
+        {
+          "name": "weekday",
+          "type": "INTEGER",
+          "description": "ISO 8601 weekday, Monday = 1, Sunday = 7"
+        },
+        {
+          "name": "weekday_name",
+          "type": "VARCHAR",
+          "description": "Weekday, English"
+        },
+        {
+          "name": "weekday_name_de",
+          "type": "VARCHAR",
+          "description": "Weekday, German"
+        },
+        {
+          "name": "month_name",
+          "type": "VARCHAR",
+          "description": "Month, English"
+        },
+        {
+          "name": "month_name_de",
+          "type": "VARCHAR",
+          "description": "Month, German"
+        },
+        {
+          "name": "iso_year",
+          "type": "INTEGER",
+          "description": "ISO 8601 week-numbering year, differs from the calendar year around New Year"
+        },
+        {
+          "name": "iso_week",
+          "type": "INTEGER",
+          "description": "ISO 8601 week"
+        },
+        {
+          "name": "iso_year_week",
+          "type": "VARCHAR",
+          "description": "ISO week as text, e.g. 2026-W53"
+        },
+        {
+          "name": "is_weekend",
+          "type": "BOOLEAN",
+          "description": "Saturday or Sunday. The weekend of a country is in fact_calendar_day"
+        },
+        {
+          "name": "week_start",
+          "type": "DATE",
+          "description": "Monday of the week"
+        },
+        {
+          "name": "month_start",
+          "type": "DATE",
+          "description": "First day of the month"
+        },
+        {
+          "name": "month_end",
+          "type": "DATE",
+          "description": "Last day of the month"
+        },
+        {
+          "name": "easter_offset",
+          "type": "INTEGER",
+          "description": "Days since (Western) Easter Sunday of the same year (Rose Monday = -48, Whit Monday = 50)"
+        },
+        {
+          "name": "comparable_date_prev_year",
+          "type": "DATE",
+          "description": "Comparable day last year: 364 days back, so the same weekday. Carnival, Easter, Ascension, Whitsun and Corpus Christi follow Easter; 24 to 26 and 31 December and New Year follow the calendar date"
+        }
+      ],
+      "snapshot": {
+        "parquet": {
+          "path": "releases/2026.02.01/dim_date.parquet",
+          "sha256": "844e968e9166f89e66ed5fbec399f4f1f48074a75d38fbd8771607cfabe0312b",
+          "bytes": 10334
+        },
+        "csv": {
+          "path": "latest/dim_date.csv",
+          "sha256": "448ee5db8e973480c46113b9e9c2c58ba3de2f1a0673d89bec5c560d61df1503",
+          "bytes": 50860
+        }
+      }
+    },
+    {
+      "name": "dim_country",
+      "description": "Countries in the data.",
+      "primary_key": [
+        "country_code"
+      ],
+      "rows": 1,
+      "columns": [
+        {
+          "name": "country_code",
+          "type": "VARCHAR",
+          "description": "Country, ISO 3166-1 alpha-2"
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR",
+          "description": "Name, English"
+        },
+        {
+          "name": "name_local",
+          "type": "VARCHAR",
+          "description": "Name in the main language of the country"
+        },
+        {
+          "name": "language",
+          "type": "VARCHAR",
+          "description": "Main language, ISO 639-1. Columns ending in _local use it"
+        },
+        {
+          "name": "timezone",
+          "type": "VARCHAR",
+          "description": "Time zone (IANA), used for hours_in_day"
+        },
+        {
+          "name": "weekend_days",
+          "type": "VARCHAR",
+          "description": "Days that are not working days, e.g. saturday, sunday"
+        },
+        {
+          "name": "region_type",
+          "type": "VARCHAR",
+          "description": "What a region is in this country, e.g. municipality. Empty without regions"
+        },
+        {
+          "name": "region_code_name",
+          "type": "VARCHAR",
+          "description": "Name of the official region code, e.g. AGS"
+        },
+        {
+          "name": "attribution",
+          "type": "VARCHAR",
+          "description": "Sources to credit when passing on data of this country"
+        }
+      ],
+      "snapshot": {
+        "parquet": {
+          "path": "releases/2026.02.01/dim_country.parquet",
+          "sha256": "ced54d0269d1c7829f1163af1d1d6db9e4bf67cf8234895ca66ca56af1f3a82a",
+          "bytes": 1844
+        },
+        "csv": {
+          "path": "latest/dim_country.csv",
+          "sha256": "64406f40bc91b5f42da6beeaa8dcec43e3f55834e65940c8b989c0388c83444b",
+          "bytes": 267
+        }
+      }
+    },
+    {
+      "name": "dim_calendar_profile",
+      "description": "Calendar profiles. All regions in a profile share the same public and school holidays.",
+      "primary_key": [
+        "calendar_profile_id"
+      ],
+      "rows": 18,
+      "columns": [
+        {
+          "name": "calendar_profile_id",
+          "type": "VARCHAR",
+          "description": "Profile, e.g. DE-BY-MH for Bavarian municipalities with Assumption Day. Every subdivision has a profile with its own code"
+        },
+        {
+          "name": "country_code",
+          "type": "VARCHAR",
+          "description": "Country, ISO 3166-1 alpha-2"
+        },
+        {
+          "name": "subdivision_code",
+          "type": "VARCHAR",
+          "description": "Subdivision (state), ISO 3166-2"
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR",
+          "description": "Description, English"
+        },
+        {
+          "name": "name_local",
+          "type": "VARCHAR",
+          "description": "Description in the language of the country"
+        },
+        {
+          "name": "subdivision_name",
+          "type": "VARCHAR",
+          "description": "Subdivision, English"
+        },
+        {
+          "name": "subdivision_name_local",
+          "type": "VARCHAR",
+          "description": "Subdivision in the language of the country"
+        },
+        {
+          "name": "school_holidays_from",
+          "type": "DATE",
+          "description": "First day with known school holidays (start of the first school year)"
+        },
+        {
+          "name": "school_holidays_until",
+          "type": "DATE",
+          "description": "Last day with known school holidays (end of the last school year)"
+        }
+      ],
+      "snapshot": {
+        "parquet": {
+          "path": "releases/2026.02.01/dim_calendar_profile.parquet",
+          "sha256": "d93d741b27512cd7b1762ab0d7e9d388b26cd95d6be893f7b9b4dd4747b1f714",
+          "bytes": 2707
+        },
+        "csv": {
+          "path": "latest/dim_calendar_profile.csv",
+          "sha256": "4df0b2b0349029e5245c4b1691e6fc09361398ce696cb5ac0819ba5154eb0fe4",
+          "bytes": 1866
+        }
+      }
+    },
+    {
+      "name": "dim_holiday",
+      "description": "Public and school holidays, one row per holiday and country.",
+      "primary_key": [
+        "country_code",
+        "holiday_id"
+      ],
+      "rows": 28,
+      "columns": [
+        {
+          "name": "country_code",
+          "type": "VARCHAR",
+          "description": "Country, ISO 3166-1 alpha-2"
+        },
+        {
+          "name": "holiday_id",
+          "type": "VARCHAR",
+          "description": "Identifier, e.g. assumption-day or summer"
+        },
+        {
+          "name": "holiday_type",
+          "type": "VARCHAR",
+          "description": "public or school"
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR",
+          "description": "Name, English"
+        },
+        {
+          "name": "name_local",
+          "type": "VARCHAR",
+          "description": "Name in the language of the country"
+        }
+      ],
+      "snapshot": {
+        "parquet": {
+          "path": "releases/2026.02.01/dim_holiday.parquet",
+          "sha256": "8b8a6c9d99e4013468ffdd544dac1417ec1e92b16c79b635fbc06d802fa56cf3",
+          "bytes": 2075
+        },
+        "csv": {
+          "path": "latest/dim_holiday.csv",
+          "sha256": "8545e7f7aa75760b76df98857ff96509d8c4ea0b060554d40d88485e96bfd035",
+          "bytes": 1691
+        }
+      }
+    },
+    {
+      "name": "holiday_rule",
+      "description": "The rules the public holidays are calculated from, with their legal basis.",
+      "primary_key": [
+        "country_code",
+        "holiday_id",
+        "applies_to",
+        "date_rule"
+      ],
+      "rows": 27,
+      "columns": [
+        {
+          "name": "country_code",
+          "type": "VARCHAR",
+          "description": "Country, ISO 3166-1 alpha-2"
+        },
+        {
+          "name": "holiday_id",
+          "type": "VARCHAR",
+          "description": "Holiday"
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR",
+          "description": "Name, English"
+        },
+        {
+          "name": "name_local",
+          "type": "VARCHAR",
+          "description": "Name in the language of the country"
+        },
+        {
+          "name": "date_rule",
+          "type": "VARCHAR",
+          "description": "Date: month-day, single dates, an offset from Easter Sunday or a weekday rule"
+        },
+        {
+          "name": "applies_to",
+          "type": "VARCHAR",
+          "description": "Where the rule applies: a country, subdivision or profile code, each with every profile below it"
+        },
+        {
+          "name": "level",
+          "type": "VARCHAR",
+          "description": "national, subdivision or municipal"
+        },
+        {
+          "name": "valid_from",
+          "type": "DATE",
+          "description": "Valid from (empty: before the data starts)"
+        },
+        {
+          "name": "valid_until",
+          "type": "DATE",
+          "description": "Valid until (empty: open-ended)"
+        },
+        {
+          "name": "legal_basis",
+          "type": "VARCHAR",
+          "description": "Legal basis"
+        },
+        {
+          "name": "source",
+          "type": "VARCHAR",
+          "description": "Link to the source"
+        },
+        {
+          "name": "note",
+          "type": "VARCHAR",
+          "description": "Note"
+        }
+      ],
+      "snapshot": {
+        "parquet": {
+          "path": "releases/2026.02.01/holiday_rule.parquet",
+          "sha256": "1bd08a99cc137e8863978cf22bd6048de74364e3ab1e0a25abddfadc104abb27",
+          "bytes": 4730
+        },
+        "csv": {
+          "path": "latest/holiday_rule.csv",
+          "sha256": "c597e02ccadfb43a18b260fd53611832edcdc8220cfde0de0163be5c7ab69a0f",
+          "bytes": 3468
+        }
+      }
+    },
+    {
+      "name": "school_holiday_period",
+      "description": "School holidays as periods, as published by the authorities.",
+      "primary_key": [
+        "country_code",
+        "applies_to",
+        "start_date"
+      ],
+      "rows": 1908,
+      "columns": [
+        {
+          "name": "country_code",
+          "type": "VARCHAR",
+          "description": "Country, ISO 3166-1 alpha-2"
+        },
+        {
+          "name": "school_year",
+          "type": "VARCHAR",
+          "description": "School year, e.g. 2026/27"
+        },
+        {
+          "name": "school_holiday_id",
+          "type": "VARCHAR",
+          "description": "School holiday, e.g. summer"
+        },
+        {
+          "name": "applies_to",
+          "type": "VARCHAR",
+          "description": "Subdivision or profile code, each with every profile below it"
+        },
+        {
+          "name": "start_date",
+          "type": "DATE",
+          "description": "First day"
+        },
+        {
+          "name": "end_date",
+          "type": "DATE",
+          "description": "Last day, inclusive"
+        },
+        {
+          "name": "source",
+          "type": "VARCHAR",
+          "description": "Link to the source"
+        }
+      ],
+      "snapshot": {
+        "parquet": {
+          "path": "releases/2026.02.01/school_holiday_period.parquet",
+          "sha256": "6dc3ed47c1c1a0268687d5ccb4731f65fa849d99320c011ca077964f30342da8",
+          "bytes": 8795
+        },
+        "csv": {
+          "path": "latest/school_holiday_period.csv",
+          "sha256": "b1632a8b03bbd721710fa093c57bd239707894b0b505c5262e4560e149aa6787",
+          "bytes": 228841
+        }
+      }
+    },
+    {
+      "name": "dim_region",
+      "description": "Regions, in Germany all municipalities from the Destatis municipality register as of 31 December 2025.",
+      "primary_key": [
+        "region_id"
+      ],
+      "rows": 79,
+      "columns": [
+        {
+          "name": "region_id",
+          "type": "VARCHAR",
+          "description": "Country and official code, e.g. DE-09564000"
+        },
+        {
+          "name": "country_code",
+          "type": "VARCHAR",
+          "description": "Country, ISO 3166-1 alpha-2"
+        },
+        {
+          "name": "region_code",
+          "type": "VARCHAR",
+          "description": "Official code in the country, in Germany the eight-digit AGS"
+        },
+        {
+          "name": "region_type",
+          "type": "VARCHAR",
+          "description": "Kind of region, e.g. municipality"
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR",
+          "description": "Official name"
+        },
+        {
+          "name": "district_code",
+          "type": "VARCHAR",
+          "description": "District code, in Germany five digits"
+        },
+        {
+          "name": "district_name",
+          "type": "VARCHAR",
+          "description": "District or district-free city"
+        },
+        {
+          "name": "subdivision_code",
+          "type": "VARCHAR",
+          "description": "Subdivision (state), ISO 3166-2"
+        },
+        {
+          "name": "subdivision_name",
+          "type": "VARCHAR",
+          "description": "Subdivision, English"
+        },
+        {
+          "name": "subdivision_name_local",
+          "type": "VARCHAR",
+          "description": "Subdivision in the language of the country"
+        },
+        {
+          "name": "population",
+          "type": "BIGINT",
+          "description": "Population, in Germany on 31 December 2025 based on the 2022 census"
+        },
+        {
+          "name": "postcode",
+          "type": "VARCHAR",
+          "description": "Postcode of the administrative seat. A region can have several"
+        },
+        {
+          "name": "latitude",
+          "type": "DOUBLE",
+          "description": "Latitude of the geographic centre"
+        },
+        {
+          "name": "longitude",
+          "type": "DOUBLE",
+          "description": "Longitude of the geographic centre"
+        },
+        {
+          "name": "urbanisation",
+          "type": "VARCHAR",
+          "description": "Degree of urbanisation (EU DEGURBA): densely populated, intermediate density or thinly populated"
+        }
+      ],
+      "snapshot": {
+        "parquet": {
+          "path": "releases/2026.02.01/dim_region.parquet",
+          "sha256": "c338788b1c2c0bdef06f677b903201189419de870376f4fe281b2118fe1618aa",
+          "bytes": 7330
+        },
+        "csv": {
+          "path": "latest/dim_region.csv",
+          "sha256": "1c5b44334c3ca1399e01e0b6693ff36a7e07661ca80ee6b7f6d67981d8c0a58d",
+          "bytes": 13810
+        }
+      }
+    },
+    {
+      "name": "bridge_region_profile",
+      "description": "Which calendar profile a region has when. In Germany this only changes in Bavaria.",
+      "primary_key": [
+        "region_id",
+        "valid_from"
+      ],
+      "rows": 79,
+      "columns": [
+        {
+          "name": "region_id",
+          "type": "VARCHAR",
+          "description": "Region"
+        },
+        {
+          "name": "calendar_profile_id",
+          "type": "VARCHAR",
+          "description": "Calendar profile"
+        },
+        {
+          "name": "valid_from",
+          "type": "DATE",
+          "description": "Valid from, at the earliest from the start of the data"
+        },
+        {
+          "name": "valid_until",
+          "type": "DATE",
+          "description": "Valid until, inclusive; 9999-12-31 for the current assignment"
+        }
+      ],
+      "snapshot": {
+        "parquet": {
+          "path": "releases/2026.02.01/bridge_region_profile.parquet",
+          "sha256": "2a6584f6af3815c8e33d05be1abd48891feee6ce9d036686045152048ed2f8ef",
+          "bytes": 1165
+        },
+        "csv": {
+          "path": "latest/bridge_region_profile.csv",
+          "sha256": "7336fcfc41a6be3dc0aa0a4bf00cd7639518a70eac6056d6c018929bebbfd2b1",
+          "bytes": 3228
+        }
+      }
+    },
+    {
+      "name": "fact_calendar_day",
+      "description": "One row per day and calendar profile with public holidays, school holidays, workdays and bridge days.",
+      "primary_key": [
+        "calendar_profile_id",
+        "date"
+      ],
+      "rows": 6570,
+      "columns": [
+        {
+          "name": "date_key",
+          "type": "INTEGER",
+          "description": "Date as integer YYYYMMDD"
+        },
+        {
+          "name": "date",
+          "type": "DATE",
+          "description": "Date"
+        },
+        {
+          "name": "calendar_profile_id",
+          "type": "VARCHAR",
+          "description": "Calendar profile"
+        },
+        {
+          "name": "country_code",
+          "type": "VARCHAR",
+          "description": "Country, ISO 3166-1 alpha-2"
+        },
+        {
+          "name": "subdivision_code",
+          "type": "VARCHAR",
+          "description": "Subdivision (state), ISO 3166-2"
+        },
+        {
+          "name": "is_weekend",
+          "type": "BOOLEAN",
+          "description": "Weekend in this country"
+        },
+        {
+          "name": "is_public_holiday",
+          "type": "BOOLEAN",
+          "description": "Statutory public holiday"
+        },
+        {
+          "name": "holiday_id",
+          "type": "VARCHAR",
+          "description": "Public holiday identifier, comma-separated if there are several"
+        },
+        {
+          "name": "holiday_name",
+          "type": "VARCHAR",
+          "description": "Public holiday name, English"
+        },
+        {
+          "name": "holiday_name_local",
+          "type": "VARCHAR",
+          "description": "Public holiday name in the language of the country"
+        },
+        {
+          "name": "holiday_level",
+          "type": "VARCHAR",
+          "description": "national, subdivision or municipal"
+        },
+        {
+          "name": "is_school_holiday",
+          "type": "BOOLEAN",
+          "description": "School holidays. Empty outside the school years with data (see dim_calendar_profile)"
+        },
+        {
+          "name": "school_holiday_id",
+          "type": "VARCHAR",
+          "description": "School holiday identifier, e.g. summer"
+        },
+        {
+          "name": "school_holiday_name",
+          "type": "VARCHAR",
+          "description": "School holiday name, English"
+        },
+        {
+          "name": "school_holiday_name_local",
+          "type": "VARCHAR",
+          "description": "School holiday name in the language of the country"
+        },
+        {
+          "name": "is_workday",
+          "type": "BOOLEAN",
+          "description": "Not a weekend day and not a public holiday. School holidays are workdays"
+        },
+        {
+          "name": "workday_index",
+          "type": "BIGINT",
+          "description": "Running workday number. Workdays between two dates are the difference; days off carry the number of the workday before"
+        },
+        {
+          "name": "workday_of_month",
+          "type": "BIGINT",
+          "description": "Nth workday of the month, empty on days off"
+        },
+        {
+          "name": "workdays_in_month",
+          "type": "BIGINT",
+          "description": "Workdays in the whole month"
+        },
+        {
+          "name": "previous_workday",
+          "type": "DATE",
+          "description": "Last workday before this day"
+        },
+        {
+          "name": "next_workday",
+          "type": "DATE",
+          "description": "Next workday after this day"
+        },
+        {
+          "name": "is_bridge_day",
+          "type": "BOOLEAN",
+          "description": "Single workday between two days off"
+        },
+        {
+          "name": "bridge_days_off",
+          "type": "BIGINT",
+          "description": "Consecutive days off when the bridge day is taken"
+        },
+        {
+          "name": "hours_in_day",
+          "type": "INTEGER",
+          "description": "Hours of the day in local time: 23 or 25 on days with a daylight saving switch"
+        }
+      ],
+      "snapshot": {
+        "parquet": {
+          "path": "releases/2026.02.01/fact_calendar_day.parquet",
+          "sha256": "0ae50950ef1c4ba53b80dc48e980b25dfeea9820a5a07464421975fabc258113",
+          "bytes": 29697
+        },
+        "csv": {
+          "path": "latest/fact_calendar_day.csv",
+          "sha256": "29376f313f64a0b21db4fa45942041b72c1cf35e2fbde608c69e9b3431619287",
+          "bytes": 764294
+        }
+      }
+    },
+    {
+      "name": "agg_population_day",
+      "description": "Share of the population with a public holiday and with school holidays, per day for every country and subdivision. In Germany weighted by population on 31 December 2025, also for earlier years.",
+      "primary_key": [
+        "region",
+        "date"
+      ],
+      "rows": 6205,
+      "columns": [
+        {
+          "name": "date",
+          "type": "DATE",
+          "description": "Date"
+        },
+        {
+          "name": "region",
+          "type": "VARCHAR",
+          "description": "Country (ISO 3166-1) or subdivision (ISO 3166-2)"
+        },
+        {
+          "name": "population",
+          "type": "BIGINT",
+          "description": "Population"
+        },
+        {
+          "name": "population_public_holiday",
+          "type": "BIGINT",
+          "description": "Population in regions with a public holiday"
+        },
+        {
+          "name": "share_public_holiday",
+          "type": "DOUBLE",
+          "description": "Share between 0 and 1"
+        },
+        {
+          "name": "population_school_holiday",
+          "type": "BIGINT",
+          "description": "Population in regions with school holidays. Empty where school holidays are unknown"
+        },
+        {
+          "name": "share_school_holiday",
+          "type": "DOUBLE",
+          "description": "Share between 0 and 1. Empty where school holidays are unknown"
+        }
+      ],
+      "snapshot": {
+        "parquet": {
+          "path": "releases/2026.02.01/agg_population_day.parquet",
+          "sha256": "65e4b411aa9ae06d415484dc2f5d04e74bbc97b517d40de6903153ba2cec112c",
+          "bytes": 10367
+        },
+        "csv": {
+          "path": "latest/agg_population_day.csv",
+          "sha256": "2d1c5c5349f7fe5bbd15647178d179c349909234d670b48ce10b178fb0a3fdaf",
+          "bytes": 236758
+        }
+      }
+    }
+  ],
+  "releases": [
+    {
+      "version": "2026.01.15",
+      "release_seq": 1,
+      "released_at": "2026-10-27T09:51:45+00:00",
+      "changes": [
+        {
+          "table": "dim_date",
+          "upserts": 365,
+          "deletes": 0,
+          "parquet": {
+            "path": "changes/dim_date/2026.01.15.parquet",
+            "sha256": "b01ce674d27561516494295ca627fdf3863c1729ae43d8095f63a044f366bfc6",
+            "bytes": 10376
+          },
+          "csv": {
+            "path": "changes/dim_date/2026.01.15.csv",
+            "sha256": "ae30fd3b28bbd2082969460f09a2f109ee24667689c49e78102e8ddcb545634e",
+            "bytes": 54170
+          }
+        },
+        {
+          "table": "dim_country",
+          "upserts": 1,
+          "deletes": 0,
+          "parquet": {
+            "path": "changes/dim_country/2026.01.15.parquet",
+            "sha256": "d24b0666f1105e7221d7acc5aa91f8e5c8d8e9fe024cd3733e99e9dea456becf",
+            "bytes": 2098
+          },
+          "csv": {
+            "path": "changes/dim_country/2026.01.15.csv",
+            "sha256": "caa7b8367289abc13cd8ba10e27f01cf8b305fa5150440ecd6f71e8666639117",
+            "bytes": 293
+          }
+        },
+        {
+          "table": "dim_calendar_profile",
+          "upserts": 18,
+          "deletes": 0,
+          "parquet": {
+            "path": "changes/dim_calendar_profile/2026.01.15.parquet",
+            "sha256": "9f8a8871c2d671c13fbc83f82f3cc80fec2e7203d75f9c5223234e13786e8bb2",
+            "bytes": 3139
+          },
+          "csv": {
+            "path": "changes/dim_calendar_profile/2026.01.15.csv",
+            "sha256": "cd695a4bc5a8b4fb695691997ed4c229f8b92c3f0ff01f76f4aaaed049173285",
+            "bytes": 2045
+          }
+        },
+        {
+          "table": "dim_holiday",
+          "upserts": 28,
+          "deletes": 0,
+          "parquet": {
+            "path": "changes/dim_holiday/2026.01.15.parquet",
+            "sha256": "30232195b16e224369182a8f8248d1bfdde350e8c3c1cd09e6ce7618b3fad474",
+            "bytes": 2507
+          },
+          "csv": {
+            "path": "changes/dim_holiday/2026.01.15.csv",
+            "sha256": "e5e4b1232d29830140ae0449b5c90e61b05460db233c2c561440aaa6324aed94",
+            "bytes": 1960
+          }
+        },
+        {
+          "table": "holiday_rule",
+          "upserts": 27,
+          "deletes": 0,
+          "parquet": {
+            "path": "changes/holiday_rule/2026.01.15.parquet",
+            "sha256": "f56ff61f4d655e00df4f75e9983a52c81d6e827c8d9896bfb910bcb0587c9190",
+            "bytes": 5163
+          },
+          "csv": {
+            "path": "changes/holiday_rule/2026.01.15.csv",
+            "sha256": "68409318aea27d81cc5affbc10ee64834e800428092f31f4929d48dd49a47773",
+            "bytes": 3728
+          }
+        },
+        {
+          "table": "school_holiday_period",
+          "upserts": 1908,
+          "deletes": 0,
+          "parquet": {
+            "path": "changes/school_holiday_period/2026.01.15.parquet",
+            "sha256": "00b59fa97056c279a0bb0dd27cd387f7870342d6ce54f5db0638fa183a194b7d",
+            "bytes": 9233
+          },
+          "csv": {
+            "path": "changes/school_holiday_period/2026.01.15.csv",
+            "sha256": "759404a9c095cb6314c6a284503c74aa61022f7cab8ac3e466c7bb76770c8c16",
+            "bytes": 246030
+          }
+        },
+        {
+          "table": "dim_region",
+          "upserts": 79,
+          "deletes": 0,
+          "parquet": {
+            "path": "changes/dim_region/2026.01.15.parquet",
+            "sha256": "bae8328056b75de2ef0f60f00a43756e7b59292f2b8b50a017386ee8acd6db40",
+            "bytes": 7768
+          },
+          "csv": {
+            "path": "changes/dim_region/2026.01.15.csv",
+            "sha256": "c8bb306cfb84df4bc55d4208b62dd2d32afe8669c95484637b883738782f6f01",
+            "bytes": 14538
+          }
+        },
+        {
+          "table": "bridge_region_profile",
+          "upserts": 79,
+          "deletes": 0,
+          "parquet": {
+            "path": "changes/bridge_region_profile/2026.01.15.parquet",
+            "sha256": "20477901389b6195f930715d3aaa059d2b26646ea465f3d66d04a1f00ae7e445",
+            "bytes": 1603
+          },
+          "csv": {
+            "path": "changes/bridge_region_profile/2026.01.15.csv",
+            "sha256": "dd6b0ef25e04c7f1ba6c1578490e15687159007be9853133ca1ac07de8a850c2",
+            "bytes": 3956
+          }
+        },
+        {
+          "table": "fact_calendar_day",
+          "upserts": 6570,
+          "deletes": 0,
+          "parquet": {
+            "path": "changes/fact_calendar_day/2026.01.15.parquet",
+            "sha256": "c708e863e85c9b54bf9f92c6d92d2752bb1ea36381d0f57d823ece10247b9853",
+            "bytes": 26163
+          },
+          "csv": {
+            "path": "changes/fact_calendar_day/2026.01.15.csv",
+            "sha256": "0c64920caa498c3e69fb7025f40c1ebffd11b44b57efdb697a5a2c4b648ab560",
+            "bytes": 823694
+          }
+        },
+        {
+          "table": "agg_population_day",
+          "upserts": 6205,
+          "deletes": 0,
+          "parquet": {
+            "path": "changes/agg_population_day/2026.01.15.parquet",
+            "sha256": "b0dff3e9ab41c968b576b139452d868bc1ea1eb1d3999d8f8820a1acc1eb4c50",
+            "bytes": 10573
+          },
+          "csv": {
+            "path": "changes/agg_population_day/2026.01.15.csv",
+            "sha256": "6b088524104331133875984e7299c72b0c2a58c8a6504020703b5ef22ace7b68",
+            "bytes": 292591
+          }
+        }
+      ]
+    },
+    {
+      "version": "2026.02.01",
+      "release_seq": 2,
+      "released_at": "2026-10-27T09:51:45+00:00",
+      "changes": [
+        {
+          "table": "dim_date",
+          "upserts": 365,
+          "deletes": 365,
+          "parquet": {
+            "path": "changes/dim_date/2026.02.01.parquet",
+            "sha256": "7adc8bf358c3a4c7a55cd37341cb7fad271de1f16ea437ce5f5e40a9168f06c9",
+            "bytes": 13076
+          },
+          "csv": {
+            "path": "changes/dim_date/2026.02.01.csv",
+            "sha256": "42f59b04697f29e22a79fdee4b59617b4ffdc38013331c79846cc68800d91322",
+            "bytes": 108088
+          }
+        },
+        {
+          "table": "bridge_region_profile",
+          "upserts": 79,
+          "deletes": 79,
+          "parquet": {
+            "path": "changes/bridge_region_profile/2026.02.01.parquet",
+            "sha256": "36336c06529dfc1f06734e0564e0c578415b8a4cb57af498b73ac17a14b90683",
+            "bytes": 1795
+          },
+          "csv": {
+            "path": "changes/bridge_region_profile/2026.02.01.csv",
+            "sha256": "2a742771070040f084489d4c967fabe577ba182073c5e00f40322af83c92d7ba",
+            "bytes": 7842
+          }
+        },
+        {
+          "table": "fact_calendar_day",
+          "upserts": 6570,
+          "deletes": 6570,
+          "parquet": {
+            "path": "changes/fact_calendar_day/2026.02.01.parquet",
+            "sha256": "9b4607e3669ccb663f2f21d51577d78883c5e878796eb66c447670ea203bea66",
+            "bytes": 37769
+          },
+          "csv": {
+            "path": "changes/fact_calendar_day/2026.02.01.csv",
+            "sha256": "54fcb5a659418172c736255c4833db6a5669b6e991a8f1befb8bd0c0145a702a",
+            "bytes": 1646753
+          }
+        },
+        {
+          "table": "agg_population_day",
+          "upserts": 6205,
+          "deletes": 6205,
+          "parquet": {
+            "path": "changes/agg_population_day/2026.02.01.parquet",
+            "sha256": "92de31c3bafe8a36811eae159197cb675acf8d755328208c36a1a8c2f6a33a06",
+            "bytes": 12608
+          },
+          "csv": {
+            "path": "changes/agg_population_day/2026.02.01.csv",
+            "sha256": "a4519fa0986d833a03b02d14c0f862eb56f060bf0e81a87ec1fd32f76c2c9b00",
+            "bytes": 585077
+          }
+        }
+      ]
+    }
+  ]
+}

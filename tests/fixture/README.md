@@ -1,0 +1,1 @@
+Two small releases for the tests, 2026 and then 2027, in the same layout as data.trakora.com. Built by Trakora's release tooling from `data/`, with only the cities of at least 100,000 residents to keep it small. Not edited by hand.

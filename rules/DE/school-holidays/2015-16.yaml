@@ -1,0 +1,109 @@
+# Source: KMK, Ferien im Schuljahr 2015/16
+school_year: 2015/16
+source: https://www.kmk.org/fileadmin/Dateien/pdf/Ferienkalender/FER2015_16.pdf
+periods:
+  DE-BB:
+    autumn: 2015-10-19/2015-10-30
+    christmas: 2015-12-23/2016-01-02
+    winter: 2016-02-01/2016-02-06
+    easter: 2016-03-23/2016-04-02
+    whitsun: [2016-05-06, 2016-05-17]
+    summer: 2016-07-21/2016-09-03
+  DE-BE:
+    autumn: 2015-10-19/2015-10-31
+    christmas: 2015-12-23/2016-01-02
+    winter: 2016-02-01/2016-02-06
+    easter: 2016-03-21/2016-04-02
+    whitsun: [2016-05-06, 2016-05-17]
+    summer: 2016-07-21/2016-09-02  # KMK lists two start dates (20./21.07.); later one used
+  DE-BW:
+    autumn: 2015-11-02/2015-11-06
+    christmas: 2015-12-23/2016-01-09
+    easter: 2016-03-29/2016-04-02
+    whitsun: 2016-05-17/2016-05-28
+    summer: 2016-07-28/2016-09-10
+  DE-BY:
+    autumn: 2015-11-02/2015-11-07
+    christmas: 2015-12-24/2016-01-05
+    winter: 2016-02-08/2016-02-12
+    easter: 2016-03-21/2016-04-01
+    whitsun: 2016-05-17/2016-05-28
+    summer: 2016-07-30/2016-09-12
+  DE-HB:
+    autumn: 2015-10-19/2015-10-31
+    christmas: 2015-12-23/2016-01-06
+    winter: 2016-01-28/2016-01-29
+    easter: 2016-03-18/2016-04-02
+    whitsun: 2016-05-17
+    summer: 2016-06-23/2016-08-03
+  DE-HE:
+    autumn: 2015-10-19/2015-10-31
+    christmas: 2015-12-23/2016-01-09
+    easter: 2016-03-29/2016-04-09
+    summer: 2016-07-18/2016-08-26
+  DE-HH:
+    autumn: 2015-10-19/2015-10-30
+    christmas: 2015-12-21/2016-01-01
+    winter: 2016-01-29
+    easter: 2016-03-07/2016-03-18
+    whitsun: [2016-05-06, 2016-05-17/2016-05-20]
+    summer: 2016-07-21/2016-08-31
+  DE-MV:
+    autumn: 2015-10-24/2015-10-30
+    christmas: 2015-12-21/2016-01-02
+    winter: 2016-02-01/2016-02-13
+    easter: 2016-03-21/2016-03-30
+    whitsun: 2016-05-14/2016-05-17
+    summer: 2016-07-25/2016-09-03
+  DE-NI:
+    autumn: 2015-10-19/2015-10-31
+    christmas: 2015-12-23/2016-01-06
+    winter: 2016-01-28/2016-01-29
+    easter: 2016-03-18/2016-04-02
+    whitsun: [2016-05-06, 2016-05-17]
+    summer: 2016-06-23/2016-08-03
+  DE-NW:
+    autumn: 2015-10-05/2015-10-17
+    christmas: 2015-12-23/2016-01-06
+    easter: 2016-03-21/2016-04-02
+    whitsun: 2016-05-17
+    summer: 2016-07-11/2016-08-23
+  DE-RP:
+    autumn: 2015-10-19/2015-10-30
+    christmas: 2015-12-23/2016-01-08
+    easter: 2016-03-18/2016-04-01
+    summer: 2016-07-18/2016-08-26
+  # KMK footnote: special rules for the islands Sylt, Foehr, Amrum, Helgoland and the Halligen (summer and autumn); not included
+  DE-SH:
+    autumn: 2015-10-19/2015-10-31
+    christmas: 2015-12-21/2016-01-06
+    easter: 2016-03-24/2016-04-09
+    whitsun: 2016-05-06
+    summer: 2016-07-25/2016-09-03
+  DE-SL:
+    autumn: 2015-10-19/2015-10-31
+    christmas: 2015-12-21/2016-01-02
+    winter: 2016-02-08/2016-02-13
+    easter: 2016-03-29/2016-04-09
+    summer: 2016-07-18/2016-08-27
+  DE-SN:
+    autumn: 2015-10-12/2015-10-24
+    christmas: 2015-12-21/2016-01-02
+    winter: 2016-02-08/2016-02-20
+    easter: 2016-03-25/2016-04-02
+    whitsun: 2016-05-06
+    summer: 2016-06-27/2016-08-05
+  DE-ST:
+    autumn: 2015-10-17/2015-10-24
+    christmas: 2015-12-21/2016-01-05
+    winter: 2016-02-01/2016-02-10
+    easter: 2016-03-24
+    whitsun: 2016-05-06/2016-05-14
+    summer: 2016-06-27/2016-08-10
+  DE-TH:
+    autumn: 2015-10-05/2015-10-17  # KMK cell reads "05. - 17.10." (month of start omitted)
+    christmas: 2015-12-23/2016-01-02
+    winter: 2016-02-01/2016-02-06
+    easter: 2016-03-24/2016-04-02
+    whitsun: 2016-05-06
+    summer: 2016-06-27/2016-08-10

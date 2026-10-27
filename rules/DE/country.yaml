@@ -1,0 +1,54 @@
+# Germany. Format: docs/format.md
+
+country: DE
+name: Germany
+name_local: Deutschland
+language: de
+timezone: Europe/Berlin
+weekend: [saturday, sunday]
+school_year_starts: "08-01"
+# Municipalities and population, credit required when passing the data on
+attribution: Federal Statistical Office of Germany (Destatis), municipality register and Census 2022
+
+subdivisions:
+  DE-BB: { name: Brandenburg, name_local: Brandenburg }
+  DE-BE: { name: Berlin, name_local: Berlin }
+  DE-BW: { name: Baden-Württemberg, name_local: Baden-Württemberg }
+  DE-BY: { name: Bavaria, name_local: Bayern }
+  DE-HB: { name: Bremen, name_local: Bremen }
+  DE-HE: { name: Hesse, name_local: Hessen }
+  DE-HH: { name: Hamburg, name_local: Hamburg }
+  DE-MV: { name: Mecklenburg-Western Pomerania, name_local: Mecklenburg-Vorpommern }
+  DE-NI: { name: Lower Saxony, name_local: Niedersachsen }
+  DE-NW: { name: North Rhine-Westphalia, name_local: Nordrhein-Westfalen }
+  DE-RP: { name: Rhineland-Palatinate, name_local: Rheinland-Pfalz }
+  DE-SH: { name: Schleswig-Holstein, name_local: Schleswig-Holstein }
+  DE-SL: { name: Saarland, name_local: Saarland }
+  DE-SN: { name: Saxony, name_local: Sachsen }
+  DE-ST: { name: Saxony-Anhalt, name_local: Sachsen-Anhalt }
+  DE-TH: { name: Thuringia, name_local: Thüringen }
+
+# Every subdivision is a calendar profile with its own code. More profiles split a
+# subdivision where holidays differ between municipalities (region-profiles.csv).
+profiles:
+  DE-BY:
+    name: Bavaria, municipalities without Assumption Day
+    name_local: Bayern, Gemeinden ohne Mariä Himmelfahrt
+  DE-BY-MH:
+    name: Bavaria, municipalities with Assumption Day
+    name_local: Bayern, Gemeinden mit Mariä Himmelfahrt
+  DE-BY-AU:
+    name: Augsburg
+    name_local: Augsburg
+
+regions:
+  type: municipality
+  code: AGS
+
+school_holidays:
+  autumn: { name: Autumn holidays, name_local: Herbstferien }
+  christmas: { name: Christmas holidays, name_local: Weihnachtsferien }
+  winter: { name: Winter holidays, name_local: Winterferien }
+  easter: { name: Easter and spring holidays, name_local: Oster- und Frühjahrsferien }
+  whitsun: { name: Whitsun holidays, name_local: Pfingstferien }
+  summer: { name: Summer holidays, name_local: Sommerferien }

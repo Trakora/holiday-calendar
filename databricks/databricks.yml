@@ -1,0 +1,38 @@
+# Weekly job that keeps Delta tables in Unity Catalog in sync with the holiday calendar.
+# Runs spark/holiday_calendar_sync.py on serverless compute.
+#
+#   databricks bundle deploy --var catalog=main
+#   databricks bundle run holiday_calendar_sync
+
+bundle:
+  name: trakora-holiday-calendar
+
+sync:
+  paths:
+    - ../spark
+
+variables:
+  catalog:
+    description: Unity Catalog catalog for the tables
+    default: main
+  schema:
+    description: Schema for the tables
+    default: holiday_calendar
+
+resources:
+  jobs:
+    holiday_calendar_sync:
+      name: trakora-holiday-calendar-sync
+      schedule:
+        quartz_cron_expression: "0 0 6 ? * MON"
+        timezone_id: Europe/Berlin
+      tasks:
+        - task_key: sync
+          notebook_task:
+            notebook_path: ../spark/holiday_calendar_sync.py
+            base_parameters:
+              schema: ${var.catalog}.${var.schema}
+
+targets:
+  default:
+    default: true

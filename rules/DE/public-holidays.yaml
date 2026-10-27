@@ -1,0 +1,193 @@
+# Public holidays in Germany. Format: docs/format.md
+#
+# "in" lists where a rule applies: DE is the whole country, DE-BY Bavaria with all its
+# profiles, DE-BY-MH only that profile. "date" is a day every year ("12-25") or a single
+# date ("2020-05-08"); "easter" counts days from Easter Sunday. "from" and "until" limit a
+# rule, both inclusive. Without "level", a rule for the whole country is national and
+# anything else subdivision.
+
+holidays:
+  - id: new-year
+    name: New Year's Day
+    name_local: Neujahr
+    date: "01-01"
+    in: [DE]
+
+  - id: epiphany
+    name: Epiphany
+    name_local: Heilige Drei Könige
+    date: "01-06"
+    in: [DE-BW, DE-BY, DE-ST]
+
+  - id: womens-day
+    name: International Women's Day
+    name_local: Internationaler Frauentag
+    date: "03-08"
+    in: [DE-BE]
+    from: 2019-01-01
+    legal_basis: Berlin Gesetz über die Sonn- und Feiertage, amended 2019
+
+  - id: womens-day
+    name: International Women's Day
+    name_local: Internationaler Frauentag
+    date: "03-08"
+    in: [DE-MV]
+    from: 2023-01-01
+    legal_basis: Feiertagsgesetz Mecklenburg-Vorpommern, amended 2023
+
+  - id: good-friday
+    name: Good Friday
+    name_local: Karfreitag
+    easter: -2
+    in: [DE]
+
+  - id: easter-sunday
+    name: Easter Sunday
+    name_local: Ostersonntag
+    easter: 0
+    in: [DE-BB]
+
+  - id: easter-monday
+    name: Easter Monday
+    name_local: Ostermontag
+    easter: 1
+    in: [DE]
+
+  - id: labour-day
+    name: Labour Day
+    name_local: Tag der Arbeit
+    date: "05-01"
+    in: [DE]
+
+  - id: liberation-day
+    name: Liberation Day
+    name_local: Tag der Befreiung
+    date: "2020-05-08"
+    in: [DE-BE]
+    note: One-off, 75th anniversary of the end of the Second World War
+
+  - id: liberation-day
+    name: Liberation Day
+    name_local: Tag der Befreiung
+    date: "2025-05-08"
+    in: [DE-BE]
+    note: One-off, 80th anniversary of the end of the Second World War
+
+  - id: ascension-day
+    name: Ascension Day
+    name_local: Christi Himmelfahrt
+    easter: 39
+    in: [DE]
+
+  - id: whit-sunday
+    name: Whit Sunday
+    name_local: Pfingstsonntag
+    easter: 49
+    in: [DE-BB]
+
+  - id: whit-monday
+    name: Whit Monday
+    name_local: Pfingstmontag
+    easter: 50
+    in: [DE]
+
+  - id: gdr-uprising-anniversary
+    name: 75th Anniversary of the East German Uprising
+    name_local: 75. Jahrestag des Volksaufstands in der DDR
+    date: "2028-06-17"
+    in: [DE-BE]
+    source: https://www.berlin.de/aktuelles/9188766-958090-einmaliger-feiertag-am-8-mai-2025.html
+    note: One-off, falls on a Saturday
+
+  - id: corpus-christi
+    name: Corpus Christi
+    name_local: Fronleichnam
+    easter: 60
+    in: [DE-BW, DE-BY, DE-HE, DE-NW, DE-RP, DE-SL]
+    note: >-
+      In parts of Saxony and Thuringia, Corpus Christi applies only in some
+      municipalities. These are not included yet.
+
+  - id: augsburg-peace-festival
+    name: Augsburg Peace Festival
+    name_local: Augsburger Hohes Friedensfest
+    date: "08-08"
+    in: [DE-BY-AU]
+    level: municipal
+    legal_basis: Art. 1 Abs. 2 BayFTG
+    source: https://www.gesetze-bayern.de/Content/Document/BayFTG-1
+
+  - id: assumption-day
+    name: Assumption Day
+    name_local: Mariä Himmelfahrt
+    date: "08-15"
+    in: [DE-SL]
+
+  - id: assumption-day
+    name: Assumption Day
+    name_local: Mariä Himmelfahrt
+    date: "08-15"
+    in: [DE-BY-MH, DE-BY-AU]
+    level: municipal
+    legal_basis: Art. 1 Abs. 1 Nr. 2 BayFTG
+    source: https://www.gesetze-bayern.de/Content/Document/BayFTG-1
+    note: Only in municipalities with more Catholic than Protestant residents
+
+  - id: childrens-day
+    name: World Children's Day
+    name_local: Weltkindertag
+    date: "09-20"
+    in: [DE-TH]
+    from: 2019-01-01
+    legal_basis: Thüringer Feier- und Gedenktagsgesetz, amended 2019
+
+  - id: german-unity-day
+    name: German Unity Day
+    name_local: Tag der Deutschen Einheit
+    date: "10-03"
+    in: [DE]
+
+  - id: reformation-day
+    name: Reformation Day
+    name_local: Reformationstag
+    date: "10-31"
+    in: [DE-BB, DE-MV, DE-SN, DE-ST, DE-TH]
+
+  - id: reformation-day
+    name: Reformation Day
+    name_local: Reformationstag
+    date: "10-31"
+    in: [DE-HB, DE-HH, DE-NI, DE-SH]
+    from: 2018-01-01
+    legal_basis: Holiday laws of Bremen, Hamburg, Lower Saxony and Schleswig-Holstein, amended 2018
+
+  - id: reformation-day
+    name: Reformation Day
+    name_local: Reformationstag
+    date: "2017-10-31"
+    in: [DE]
+    note: One-off nationwide, 500th anniversary of the Reformation
+
+  - id: all-saints-day
+    name: All Saints' Day
+    name_local: Allerheiligen
+    date: "11-01"
+    in: [DE-BW, DE-BY, DE-NW, DE-RP, DE-SL]
+
+  - id: repentance-day
+    name: Day of Repentance and Prayer
+    name_local: Buß- und Bettag
+    date: { weekday: wednesday, before: "11-23" }
+    in: [DE-SN]
+
+  - id: christmas-day
+    name: Christmas Day
+    name_local: 1. Weihnachtstag
+    date: "12-25"
+    in: [DE]
+
+  - id: st-stephens-day
+    name: St. Stephen's Day
+    name_local: 2. Weihnachtstag
+    date: "12-26"
+    in: [DE]

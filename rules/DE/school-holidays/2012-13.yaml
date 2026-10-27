@@ -1,0 +1,110 @@
+# Source: KMK, Ferien im Schuljahr 2012/13
+school_year: 2012/13
+source: https://www.kmk.org/fileadmin/Dateien/pdf/Ferienkalender/FER2012_13.pdf
+periods:
+  DE-BB:
+    autumn: 2012-10-01/2012-10-13
+    christmas: 2012-12-24/2013-01-04
+    winter: 2013-02-04/2013-02-09
+    easter: 2013-03-27/2013-04-06
+    whitsun: 2013-05-10
+    summer: 2013-06-20/2013-08-02
+  DE-BE:
+    autumn: 2012-10-01/2012-10-13
+    christmas: 2012-12-24/2013-01-04
+    winter: 2013-02-04/2013-02-09
+    easter: 2013-03-25/2013-04-06
+    whitsun: [2013-05-10, 2013-05-21]
+    summer: 2013-06-20/2013-08-02  # KMK lists two start dates (19./20.06.); later one used
+  DE-BW:
+    autumn: 2012-10-29/2012-11-02
+    christmas: 2012-12-24/2013-01-05
+    easter: 2013-03-25/2013-04-05
+    whitsun: 2013-05-21/2013-06-01
+    summer: 2013-07-25/2013-09-07
+  DE-BY:
+    autumn: 2012-10-29/2012-11-03
+    christmas: 2012-12-24/2013-01-05
+    winter: 2013-02-11/2013-02-15
+    easter: 2013-03-25/2013-04-06
+    whitsun: 2013-05-21/2013-05-31
+    summer: 2013-07-31/2013-09-11
+  DE-HB:
+    autumn: 2012-10-22/2012-11-03
+    christmas: 2012-12-24/2013-01-05
+    winter: 2013-01-31/2013-02-01
+    easter: 2013-03-16/2013-04-02
+    whitsun: 2013-05-21
+    summer: 2013-06-27/2013-08-07
+  DE-HE:
+    autumn: 2012-10-15/2012-10-27
+    christmas: 2012-12-24/2013-01-12
+    easter: 2013-03-25/2013-04-06
+    summer: 2013-07-08/2013-08-16
+  DE-HH:
+    autumn: 2012-10-01/2012-10-12
+    christmas: 2012-12-21/2013-01-04
+    winter: 2013-02-01
+    easter: 2013-03-04/2013-03-15
+    whitsun: 2013-05-02/2013-05-10
+    summer: 2013-06-20/2013-07-31
+  # KMK footnote: different dates at vocational schools; not included
+  DE-MV:
+    autumn: 2012-10-01/2012-10-05
+    christmas: 2012-12-21/2013-01-04
+    winter: 2013-02-04/2013-02-15
+    easter: 2013-03-25/2013-04-03
+    whitsun: 2013-05-17/2013-05-21
+    summer: 2013-06-22/2013-08-03
+  DE-NI:
+    autumn: 2012-10-22/2012-11-03
+    christmas: 2012-12-24/2013-01-05
+    winter: 2013-01-31/2013-02-01
+    easter: 2013-03-16/2013-04-02
+    whitsun: [2013-05-10, 2013-05-21]
+    summer: 2013-06-27/2013-08-07
+  DE-NW:
+    autumn: 2012-10-08/2012-10-20
+    christmas: 2012-12-21/2013-01-04
+    easter: 2013-03-25/2013-04-06
+    whitsun: 2013-05-21
+    summer: 2013-07-22/2013-09-03
+  DE-RP:
+    autumn: 2012-10-01/2012-10-12
+    christmas: 2012-12-20/2013-01-04
+    easter: 2013-03-20/2013-04-05
+    summer: 2013-07-08/2013-08-16
+  # KMK footnote: special rules for the islands Sylt, Foehr, Amrum, Helgoland and the Halligen (summer and autumn); not included
+  DE-SH:
+    autumn: 2012-10-04/2012-10-19
+    christmas: 2012-12-24/2013-01-05
+    easter: 2013-03-25/2013-04-09
+    whitsun: 2013-05-10
+    summer: 2013-06-24/2013-08-03
+  DE-SL:
+    autumn: 2012-10-22/2012-11-03
+    christmas: 2012-12-24/2013-01-05
+    winter: 2013-02-11/2013-02-16
+    easter: 2013-03-25/2013-04-06
+    summer: 2013-07-08/2013-08-17
+  DE-SN:
+    autumn: 2012-10-22/2012-11-02
+    christmas: 2012-12-22/2013-01-02
+    winter: 2013-02-04/2013-02-15
+    easter: 2013-03-29/2013-04-06
+    whitsun: [2013-05-10, 2013-05-18/2013-05-22]
+    summer: 2013-07-15/2013-08-23
+  DE-ST:
+    autumn: 2012-10-29/2012-11-02
+    christmas: 2012-12-19/2013-01-04
+    winter: 2013-02-01/2013-02-08
+    easter: 2013-03-25/2013-03-30
+    whitsun: 2013-05-10/2013-05-18
+    summer: 2013-07-15/2013-08-28
+  DE-TH:
+    autumn: 2012-10-22/2012-11-03
+    christmas: 2012-12-24/2013-01-05
+    winter: 2013-02-18/2013-02-23
+    easter: 2013-03-25/2013-04-06
+    whitsun: 2013-05-10
+    summer: 2013-07-15/2013-08-23

@@ -1,0 +1,29 @@
+country_code,holiday_id,holiday_type,name,name_local,_op,_release_seq
+DE,all-saints-day,public,All Saints' Day,Allerheiligen,upsert,1
+DE,ascension-day,public,Ascension Day,Christi Himmelfahrt,upsert,1
+DE,assumption-day,public,Assumption Day,Mariä Himmelfahrt,upsert,1
+DE,augsburg-peace-festival,public,Augsburg Peace Festival,Augsburger Hohes Friedensfest,upsert,1
+DE,autumn,school,Autumn holidays,Herbstferien,upsert,1
+DE,childrens-day,public,World Children's Day,Weltkindertag,upsert,1
+DE,christmas,school,Christmas holidays,Weihnachtsferien,upsert,1
+DE,christmas-day,public,Christmas Day,1. Weihnachtstag,upsert,1
+DE,corpus-christi,public,Corpus Christi,Fronleichnam,upsert,1
+DE,easter,school,Easter and spring holidays,Oster- und Frühjahrsferien,upsert,1
+DE,easter-monday,public,Easter Monday,Ostermontag,upsert,1
+DE,easter-sunday,public,Easter Sunday,Ostersonntag,upsert,1
+DE,epiphany,public,Epiphany,Heilige Drei Könige,upsert,1
+DE,gdr-uprising-anniversary,public,75th Anniversary of the East German Uprising,75. Jahrestag des Volksaufstands in der DDR,upsert,1
+DE,german-unity-day,public,German Unity Day,Tag der Deutschen Einheit,upsert,1
+DE,good-friday,public,Good Friday,Karfreitag,upsert,1
+DE,labour-day,public,Labour Day,Tag der Arbeit,upsert,1
+DE,liberation-day,public,Liberation Day,Tag der Befreiung,upsert,1
+DE,new-year,public,New Year's Day,Neujahr,upsert,1
+DE,reformation-day,public,Reformation Day,Reformationstag,upsert,1
+DE,repentance-day,public,Day of Repentance and Prayer,Buß- und Bettag,upsert,1
+DE,st-stephens-day,public,St. Stephen's Day,2. Weihnachtstag,upsert,1
+DE,summer,school,Summer holidays,Sommerferien,upsert,1
+DE,whit-monday,public,Whit Monday,Pfingstmontag,upsert,1
+DE,whit-sunday,public,Whit Sunday,Pfingstsonntag,upsert,1
+DE,whitsun,school,Whitsun holidays,Pfingstferien,upsert,1
+DE,winter,school,Winter holidays,Winterferien,upsert,1
+DE,womens-day,public,International Women's Day,Internationaler Frauentag,upsert,1

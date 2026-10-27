@@ -1,0 +1,8 @@
+pyyaml>=6
+duckdb>=2.0
+dlt[duckdb]>=1.20
+pyarrow>=17
+dbt-duckdb>=1.9
+pyspark>=4.0,<4.1
+delta-spark>=4.0,<4.1
+pytest>=8

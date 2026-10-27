@@ -1,0 +1,108 @@
+# Source: KMK, Ferien im Schuljahr 2009/10
+school_year: 2009/10
+source: https://www.kmk.org/fileadmin/Dateien/pdf/Ferienkalender/Ferien09_10.pdf
+periods:
+  DE-BB:
+    autumn: 2009-10-19/2009-10-30
+    christmas: 2009-12-21/2010-01-02
+    winter: 2010-02-01/2010-02-06
+    easter: 2010-03-31/2010-04-10
+    summer: 2010-07-08/2010-08-21
+  DE-BE:
+    autumn: 2009-10-19/2009-10-30
+    christmas: 2009-12-21/2010-01-02
+    winter: 2010-02-01/2010-02-06
+    easter: 2010-03-31/2010-04-10
+    whitsun: [2010-05-14, 2010-05-25]
+    summer: 2010-07-08/2010-08-21  # KMK lists two start dates (07.07./08.07.); later one used
+  # KMK footnote: Reformationsfest and Gruendonnerstag are school-free (extra days, not included)
+  DE-BW:
+    autumn: 2009-10-26/2009-10-30
+    christmas: 2009-12-23/2010-01-09
+    easter: 2010-04-06/2010-04-10
+    whitsun: 2010-05-25/2010-06-05
+    summer: 2010-07-29/2010-09-11
+  DE-BY:
+    autumn: 2009-11-02/2009-11-07
+    christmas: 2009-12-24/2010-01-05
+    winter: 2010-02-15/2010-02-20
+    easter: 2010-03-29/2010-04-10
+    whitsun: 2010-05-25/2010-06-05
+    summer: 2010-08-02/2010-09-13
+  DE-HB:
+    autumn: 2009-10-05/2009-10-17
+    christmas: 2009-12-23/2010-01-06
+    winter: 2010-02-01/2010-02-02
+    easter: 2010-03-19/2010-04-06
+    whitsun: 2010-05-25
+    summer: 2010-06-24/2010-08-04
+  DE-HE:
+    autumn: 2009-10-12/2009-10-24
+    christmas: 2009-12-21/2010-01-09
+    easter: 2010-03-29/2010-04-10
+    summer: 2010-07-05/2010-08-14
+  DE-HH:
+    autumn: 2009-10-12/2009-10-24
+    christmas: 2009-12-21/2009-12-31
+    winter: 2010-01-29
+    easter: 2010-03-08/2010-03-20
+    whitsun: 2010-05-14/2010-05-22
+    summer: 2010-07-08/2010-08-18
+  DE-MV:
+    autumn: 2009-10-26/2009-10-30
+    christmas: 2009-12-21/2010-01-02
+    winter: 2010-02-06/2010-02-20
+    easter: 2010-03-29/2010-04-07
+    whitsun: 2010-05-21/2010-05-22
+    summer: 2010-07-12/2010-08-21
+  # KMK footnote: special rules on the Lower Saxony North Sea islands (summer); not included
+  DE-NI:
+    autumn: 2009-10-05/2009-10-17
+    christmas: 2009-12-23/2010-01-06
+    winter: [2010-02-01, 2010-02-02]  # KMK writes "01.02. + 02.02."
+    easter: 2010-03-19/2010-04-06
+    whitsun: [2010-05-14, 2010-05-25]
+    summer: 2010-06-24/2010-08-04
+  DE-NW:
+    autumn: 2009-10-12/2009-10-24
+    christmas: 2009-12-24/2010-01-06
+    easter: 2010-03-27/2010-04-10
+    whitsun: 2010-05-25
+    summer: 2010-07-15/2010-08-27
+  DE-RP:
+    autumn: 2009-10-12/2009-10-23
+    christmas: 2009-12-21/2010-01-05
+    easter: 2010-03-26/2010-04-09
+    summer: 2010-07-05/2010-08-13
+  # KMK footnote: special rules for the islands Sylt, Foehr, Amrum, Helgoland and the Halligen (summer and autumn); not included
+  DE-SH:
+    autumn: 2009-10-12/2009-10-24
+    christmas: 2009-12-21/2010-01-06
+    easter: 2010-04-03/2010-04-17
+    summer: 2010-07-12/2010-08-21
+  DE-SL:
+    autumn: 2009-10-19/2009-10-31
+    christmas: 2009-12-18/2010-01-02
+    winter: 2010-02-15/2010-02-20
+    easter: 2010-03-29/2010-04-10
+    summer: 2010-07-05/2010-08-14
+  DE-SN:
+    autumn: 2009-10-12/2009-10-24
+    christmas: 2009-12-23/2010-01-02
+    winter: 2010-02-08/2010-02-20
+    easter: 2010-04-01/2010-04-10
+    whitsun: 2010-05-14
+    summer: 2010-06-28/2010-08-06
+  DE-ST:
+    autumn: 2009-10-12/2009-10-17
+    christmas: 2009-12-21/2010-01-05
+    winter: 2010-02-08/2010-02-13
+    easter: 2010-03-29/2010-04-09
+    whitsun: 2010-05-14/2010-05-22
+    summer: 2010-06-24/2010-08-04
+  DE-TH:
+    autumn: 2009-10-12/2009-10-24
+    christmas: 2009-12-19/2010-01-02
+    winter: 2010-02-01/2010-02-06
+    easter: 2010-03-29/2010-04-09
+    summer: 2010-06-24/2010-08-04

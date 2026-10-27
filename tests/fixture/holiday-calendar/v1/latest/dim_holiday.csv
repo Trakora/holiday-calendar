@@ -1,0 +1,29 @@
+country_code,holiday_id,holiday_type,name,name_local
+DE,all-saints-day,public,All Saints' Day,Allerheiligen
+DE,ascension-day,public,Ascension Day,Christi Himmelfahrt
+DE,assumption-day,public,Assumption Day,Mariä Himmelfahrt
+DE,augsburg-peace-festival,public,Augsburg Peace Festival,Augsburger Hohes Friedensfest
+DE,autumn,school,Autumn holidays,Herbstferien
+DE,childrens-day,public,World Children's Day,Weltkindertag
+DE,christmas,school,Christmas holidays,Weihnachtsferien
+DE,christmas-day,public,Christmas Day,1. Weihnachtstag
+DE,corpus-christi,public,Corpus Christi,Fronleichnam
+DE,easter,school,Easter and spring holidays,Oster- und Frühjahrsferien
+DE,easter-monday,public,Easter Monday,Ostermontag
+DE,easter-sunday,public,Easter Sunday,Ostersonntag
+DE,epiphany,public,Epiphany,Heilige Drei Könige
+DE,gdr-uprising-anniversary,public,75th Anniversary of the East German Uprising,75. Jahrestag des Volksaufstands in der DDR
+DE,german-unity-day,public,German Unity Day,Tag der Deutschen Einheit
+DE,good-friday,public,Good Friday,Karfreitag
+DE,labour-day,public,Labour Day,Tag der Arbeit
+DE,liberation-day,public,Liberation Day,Tag der Befreiung
+DE,new-year,public,New Year's Day,Neujahr
+DE,reformation-day,public,Reformation Day,Reformationstag
+DE,repentance-day,public,Day of Repentance and Prayer,Buß- und Bettag
+DE,st-stephens-day,public,St. Stephen's Day,2. Weihnachtstag
+DE,summer,school,Summer holidays,Sommerferien
+DE,whit-monday,public,Whit Monday,Pfingstmontag
+DE,whit-sunday,public,Whit Sunday,Pfingstsonntag
+DE,whitsun,school,Whitsun holidays,Pfingstferien
+DE,winter,school,Winter holidays,Winterferien
+DE,womens-day,public,International Women's Day,Internationaler Frauentag

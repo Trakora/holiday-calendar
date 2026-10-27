@@ -1,0 +1,32 @@
+name: Add a country
+description: Propose a new country and say what you can contribute.
+title: "Add "
+labels: [new country]
+body:
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      description: Name and ISO 3166-1 code
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: What you want to add
+      options:
+        - label: Public holidays
+        - label: School holidays
+        - label: Regions with their own holidays (municipalities, cantons, ...)
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Where the data comes from and under which terms it may be passed on.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything special
+      description: Substitute days, half days, holidays that differ below the state level, ...

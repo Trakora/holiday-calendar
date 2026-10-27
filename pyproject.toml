@@ -1,0 +1,18 @@
+# Only for tools/holiday_format.py, so other projects can install the format reader:
+#   pip install -e path/to/holiday-calendar
+
+[project]
+name = "trakora-holiday-format"
+version = "1.0.0"
+description = "Reads and checks the holiday data in Trakora/holiday-calendar"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["pyyaml>=6"]
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["holiday_format"]
+package-dir = { "" = "tools" }

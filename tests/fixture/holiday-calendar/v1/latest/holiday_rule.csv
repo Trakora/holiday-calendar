@@ -1,0 +1,28 @@
+country_code,holiday_id,name,name_local,date_rule,applies_to,level,valid_from,valid_until,legal_basis,source,note
+DE,all-saints-day,All Saints' Day,Allerheiligen,11-01,"DE-BW, DE-BY, DE-NW, DE-RP, DE-SL",subdivision,,,,,
+DE,ascension-day,Ascension Day,Christi Himmelfahrt,Easter Sunday +39,DE,national,,,,,
+DE,assumption-day,Assumption Day,Mariä Himmelfahrt,08-15,"DE-BY-MH, DE-BY-AU",municipal,,,Art. 1 Abs. 1 Nr. 2 BayFTG,https://www.gesetze-bayern.de/Content/Document/BayFTG-1,Only in municipalities with more Catholic than Protestant residents
+DE,assumption-day,Assumption Day,Mariä Himmelfahrt,08-15,DE-SL,subdivision,,,,,
+DE,augsburg-peace-festival,Augsburg Peace Festival,Augsburger Hohes Friedensfest,08-08,DE-BY-AU,municipal,,,Art. 1 Abs. 2 BayFTG,https://www.gesetze-bayern.de/Content/Document/BayFTG-1,
+DE,childrens-day,World Children's Day,Weltkindertag,09-20,DE-TH,subdivision,2019-01-01,,"Thüringer Feier- und Gedenktagsgesetz, amended 2019",,
+DE,christmas-day,Christmas Day,1. Weihnachtstag,12-25,DE,national,,,,,
+DE,corpus-christi,Corpus Christi,Fronleichnam,Easter Sunday +60,"DE-BW, DE-BY, DE-HE, DE-NW, DE-RP, DE-SL",subdivision,,,,,"In parts of Saxony and Thuringia, Corpus Christi applies only in some municipalities. These are not included yet."
+DE,easter-monday,Easter Monday,Ostermontag,Easter Sunday +1,DE,national,,,,,
+DE,easter-sunday,Easter Sunday,Ostersonntag,Easter Sunday,DE-BB,subdivision,,,,,
+DE,epiphany,Epiphany,Heilige Drei Könige,01-06,"DE-BW, DE-BY, DE-ST",subdivision,,,,,
+DE,gdr-uprising-anniversary,75th Anniversary of the East German Uprising,75. Jahrestag des Volksaufstands in der DDR,2028-06-17,DE-BE,subdivision,,,,https://www.berlin.de/aktuelles/9188766-958090-einmaliger-feiertag-am-8-mai-2025.html,"One-off, falls on a Saturday"
+DE,german-unity-day,German Unity Day,Tag der Deutschen Einheit,10-03,DE,national,,,,,
+DE,good-friday,Good Friday,Karfreitag,Easter Sunday -2,DE,national,,,,,
+DE,labour-day,Labour Day,Tag der Arbeit,05-01,DE,national,,,,,
+DE,liberation-day,Liberation Day,Tag der Befreiung,2020-05-08,DE-BE,subdivision,,,,,"One-off, 75th anniversary of the end of the Second World War"
+DE,liberation-day,Liberation Day,Tag der Befreiung,2025-05-08,DE-BE,subdivision,,,,,"One-off, 80th anniversary of the end of the Second World War"
+DE,new-year,New Year's Day,Neujahr,01-01,DE,national,,,,,
+DE,reformation-day,Reformation Day,Reformationstag,2017-10-31,DE,national,,,,,"One-off nationwide, 500th anniversary of the Reformation"
+DE,reformation-day,Reformation Day,Reformationstag,10-31,"DE-BB, DE-MV, DE-SN, DE-ST, DE-TH",subdivision,,,,,
+DE,reformation-day,Reformation Day,Reformationstag,10-31,"DE-HB, DE-HH, DE-NI, DE-SH",subdivision,2018-01-01,,"Holiday laws of Bremen, Hamburg, Lower Saxony and Schleswig-Holstein, amended 2018",,
+DE,repentance-day,Day of Repentance and Prayer,Buß- und Bettag,wednesday before 11-23,DE-SN,subdivision,,,,,
+DE,st-stephens-day,St. Stephen's Day,2. Weihnachtstag,12-26,DE,national,,,,,
+DE,whit-monday,Whit Monday,Pfingstmontag,Easter Sunday +50,DE,national,,,,,
+DE,whit-sunday,Whit Sunday,Pfingstsonntag,Easter Sunday +49,DE-BB,subdivision,,,,,
+DE,womens-day,International Women's Day,Internationaler Frauentag,03-08,DE-BE,subdivision,2019-01-01,,"Berlin Gesetz über die Sonn- und Feiertage, amended 2019",,
+DE,womens-day,International Women's Day,Internationaler Frauentag,03-08,DE-MV,subdivision,2023-01-01,,"Feiertagsgesetz Mecklenburg-Vorpommern, amended 2023",,

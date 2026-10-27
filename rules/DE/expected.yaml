@@ -1,0 +1,51 @@
+# Known dates, checked on every pull request. Add one for every rule you add or change.
+# "region" is the AGS of a municipality, "profile" a calendar profile. "holiday" and
+# "school_holiday" are the expected id, or null for none.
+
+# In Bavaria, Assumption Day applies only in predominantly Catholic municipalities
+- { date: 2026-08-15, region: "09162000", holiday: assumption-day }  # Munich
+- { date: 2026-08-15, region: "09564000", holiday: null }            # Nuremberg
+- { date: 2026-08-08, region: "09761000", holiday: augsburg-peace-festival }
+- { date: 2026-08-08, region: "09162000", holiday: null }
+
+# Changes after the 2011 census (from 2014) and the 2022 census (from 2025)
+- { date: 2013-08-15, region: "09572115", holiday: assumption-day }  # Baiersdorf
+- { date: 2014-08-15, region: "09572115", holiday: null }
+- { date: 2025-08-15, region: "09572115", holiday: assumption-day }
+- { date: 2013-08-15, region: "09472190", holiday: assumption-day }  # Speichersdorf
+- { date: 2025-08-15, region: "09472190", holiday: null }
+- { date: 2013-08-15, region: "09675127", holiday: null }            # Geiselwind
+- { date: 2014-08-15, region: "09675127", holiday: assumption-day }
+- { date: 2024-08-15, region: "09572164", holiday: null }            # Weisendorf
+- { date: 2025-08-15, region: "09572164", holiday: assumption-day }
+
+# Women's Day: Berlin since 2019, Mecklenburg-Western Pomerania since 2023
+- { date: 2018-03-08, profile: DE-BE, holiday: null }
+- { date: 2019-03-08, profile: DE-BE, holiday: womens-day }
+- { date: 2022-03-08, profile: DE-MV, holiday: null }
+- { date: 2023-03-08, profile: DE-MV, holiday: womens-day }
+
+# Reformation Day: nationwide in 2017, in the north since 2018
+- { date: 2017-10-31, profile: DE-BY-MH, holiday: reformation-day }
+- { date: 2018-10-31, profile: DE-BY-MH, holiday: null }
+- { date: 2016-10-31, profile: DE-NI, holiday: null }
+- { date: 2018-10-31, profile: DE-NI, holiday: reformation-day }
+
+# One-off holidays in Berlin
+- { date: 2020-05-08, profile: DE-BE, holiday: liberation-day }
+- { date: 2021-05-08, profile: DE-BE, holiday: null }
+- { date: 2025-05-08, profile: DE-BE, holiday: liberation-day }
+- { date: 2028-06-17, profile: DE-BE, holiday: gdr-uprising-anniversary }
+
+# Children's Day in Thuringia since 2019
+- { date: 2018-09-20, profile: DE-TH, holiday: null }
+- { date: 2019-09-20, profile: DE-TH, holiday: childrens-day }
+
+# Day of Repentance and Prayer only in Saxony, the Wednesday before 23 November
+- { date: 2026-11-18, profile: DE-SN, holiday: repentance-day }
+- { date: 2022-11-16, profile: DE-SN, holiday: repentance-day }
+- { date: 2026-11-18, profile: DE-TH, holiday: null }
+
+# Easter and Whit Sunday are explicit holidays only in Brandenburg
+- { date: 2026-04-05, profile: DE-BB, holiday: easter-sunday }
+- { date: 2026-04-05, profile: DE-BE, holiday: null }

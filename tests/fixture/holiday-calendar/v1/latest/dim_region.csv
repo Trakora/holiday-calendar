@@ -1,0 +1,80 @@
+region_id,country_code,region_code,region_type,name,district_code,district_name,subdivision_code,subdivision_name,subdivision_name_local,population,postcode,latitude,longitude,urbanisation
+DE-01002000,DE,01002000,municipality,"Kiel, Landeshauptstadt",01002,"Kiel, Landeshauptstadt",DE-SH,Schleswig-Holstein,Schleswig-Holstein,251842,24103,54.321775,10.13727,densely populated
+DE-01003000,DE,01003000,municipality,"Lübeck, Hansestadt",01003,"Lübeck, Hansestadt",DE-SH,Schleswig-Holstein,Schleswig-Holstein,217061,23539,53.866269,10.683932,densely populated
+DE-02000000,DE,02000000,municipality,"Hamburg, Freie und Hansestadt",02000,"Hamburg, Freie und Hansestadt",DE-HH,Hamburg,Hamburg,1869473,20038,53.550678,9.99697,densely populated
+DE-03101000,DE,03101000,municipality,"Braunschweig, Stadt",03101,"Braunschweig, Stadt",DE-NI,Lower Saxony,Niedersachsen,252811,38100,52.26249,10.520525,densely populated
+DE-03102000,DE,03102000,municipality,"Salzgitter, Stadt",03102,"Salzgitter, Stadt",DE-NI,Lower Saxony,Niedersachsen,104433,38226,52.153574,10.329208,intermediate density
+DE-03103000,DE,03103000,municipality,"Wolfsburg, Stadt",03103,"Wolfsburg, Stadt",DE-NI,Lower Saxony,Niedersachsen,129813,38440,52.421938,10.784975,densely populated
+DE-03159016,DE,03159016,municipality,"Göttingen, Stadt",03159,Göttingen,DE-NI,Lower Saxony,Niedersachsen,130521,37083,51.533337,9.935418,densely populated
+DE-03241001,DE,03241001,municipality,"Hannover, Landeshauptstadt",03241,Region Hannover,DE-NI,Lower Saxony,Niedersachsen,522803,30159,52.374551,9.738084,densely populated
+DE-03403000,DE,03403000,municipality,"Oldenburg (Oldb), Stadt",03403,"Oldenburg (Oldb), Stadt",DE-NI,Lower Saxony,Niedersachsen,177055,26105,53.140025,8.212993,densely populated
+DE-03404000,DE,03404000,municipality,"Osnabrück, Stadt",03404,"Osnabrück, Stadt",DE-NI,Lower Saxony,Niedersachsen,166257,49074,52.27692,8.04205,densely populated
+DE-04011000,DE,04011000,municipality,"Bremen, Stadt",04011,"Bremen, Stadt",DE-HB,Bremen,Bremen,588413,28195,53.075606,8.809338,densely populated
+DE-04012000,DE,04012000,municipality,"Bremerhaven, Stadt",04012,"Bremerhaven, Stadt",DE-HB,Bremen,Bremen,118502,27576,53.543032,8.578068,densely populated
+DE-05111000,DE,05111000,municipality,"Düsseldorf, Stadt",05111,"Düsseldorf, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,619444,40213,51.22422,6.780068,densely populated
+DE-05112000,DE,05112000,municipality,"Duisburg, Stadt",05112,"Duisburg, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,500810,47051,51.433259,6.765477,densely populated
+DE-05113000,DE,05113000,municipality,"Essen, Stadt",05113,"Essen, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,573618,45121,51.455843,7.012583,densely populated
+DE-05114000,DE,05114000,municipality,"Krefeld, Stadt",05114,"Krefeld, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,230738,47798,51.332637,6.56089,densely populated
+DE-05116000,DE,05116000,municipality,"Mönchengladbach, Stadt",05116,"Mönchengladbach, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,267176,41061,51.194473,6.43161,densely populated
+DE-05117000,DE,05117000,municipality,"Mülheim an der Ruhr, Stadt",05117,"Mülheim an der Ruhr, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,171674,45468,51.428107,6.88505,densely populated
+DE-05119000,DE,05119000,municipality,"Oberhausen, Stadt",05119,"Oberhausen, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,213178,46045,51.470317,6.852291,densely populated
+DE-05120000,DE,05120000,municipality,"Remscheid, Stadt",05120,"Remscheid, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,113333,42853,51.179878,7.194356,densely populated
+DE-05122000,DE,05122000,municipality,"Solingen, Klingenstadt",05122,"Solingen, Klingenstadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,164621,42651,51.171718,7.085665,densely populated
+DE-05124000,DE,05124000,municipality,"Wuppertal, Stadt",05124,"Wuppertal, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,357243,42275,51.271288,7.195874,densely populated
+DE-05162024,DE,05162024,municipality,"Neuss, Stadt",05162,Rhein-Kreis Neuss,DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,153767,41460,51.198873,6.691409,densely populated
+DE-05170024,DE,05170024,municipality,"Moers, Stadt",05170,Wesel,DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,101298,47441,51.453559,6.628027,densely populated
+DE-05314000,DE,05314000,municipality,"Bonn, Stadt",05314,"Bonn, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,323587,53111,50.734245,7.099187,densely populated
+DE-05315000,DE,05315000,municipality,"Köln, Stadt",05315,"Köln, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,1025523,50667,50.938107,6.957068,densely populated
+DE-05316000,DE,05316000,municipality,"Leverkusen, Stadt",05316,"Leverkusen, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,168299,51373,51.03245,6.979767,densely populated
+DE-05334002,DE,05334002,municipality,"Aachen, Stadt",05334,Städteregion Aachen,DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,263703,52058,50.773516,6.0848,densely populated
+DE-05378004,DE,05378004,municipality,"Bergisch Gladbach, Stadt",05378,Rheinisch-Bergischer Kreis,DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,111174,51465,50.992244,7.130608,densely populated
+DE-05512000,DE,05512000,municipality,"Bottrop, Stadt",05512,"Bottrop, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,118482,46236,51.521059,6.927126,densely populated
+DE-05513000,DE,05513000,municipality,"Gelsenkirchen, Stadt",05513,"Gelsenkirchen, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,266199,45879,51.510892,7.096064,densely populated
+DE-05515000,DE,05515000,municipality,"Münster, Stadt",05515,"Münster, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,306368,48143,51.961908,7.626804,densely populated
+DE-05562032,DE,05562032,municipality,"Recklinghausen, Stadt",05562,Recklinghausen,DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,114851,45657,51.614576,7.197544,densely populated
+DE-05711000,DE,05711000,municipality,"Bielefeld, Stadt",05711,"Bielefeld, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,331419,33602,52.021995,8.534049,densely populated
+DE-05774032,DE,05774032,municipality,"Paderborn, Stadt",05774,Paderborn,DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,155906,33104,51.719601,8.757301,densely populated
+DE-05911000,DE,05911000,municipality,"Bochum, Stadt",05911,"Bochum, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,358880,44787,51.482699,7.217177,densely populated
+DE-05913000,DE,05913000,municipality,"Dortmund, Stadt",05913,"Dortmund, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,600880,44135,51.514171,7.464165,densely populated
+DE-05914000,DE,05914000,municipality,"Hagen, Stadt der FernUniversität",05914,"Hagen, Stadt der FernUniversität",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,189983,58095,51.360171,7.467406,densely populated
+DE-05915000,DE,05915000,municipality,"Hamm, Stadt",05915,"Hamm, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,179108,59065,51.678312,7.816947,densely populated
+DE-05916000,DE,05916000,municipality,"Herne, Stadt",05916,"Herne, Stadt",DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,156266,44623,51.540365,7.222793,densely populated
+DE-05970040,DE,05970040,municipality,"Siegen, Universitätsstadt",05970,Siegen-Wittgenstein,DE-NW,North Rhine-Westphalia,Nordrhein-Westfalen,102450,57072,50.874559,8.024625,densely populated
+DE-06411000,DE,06411000,municipality,"Darmstadt, Wissenschaftsstadt",06411,"Darmstadt, Wissenschaftsstadt",DE-HE,Hesse,Hessen,168253,64283,49.872238,8.653838,densely populated
+DE-06412000,DE,06412000,municipality,"Frankfurt am Main, Stadt",06412,"Frankfurt am Main, Stadt",DE-HE,Hesse,Hessen,760656,60311,50.11088,8.682433,densely populated
+DE-06413000,DE,06413000,municipality,"Offenbach am Main, Stadt",06413,"Offenbach am Main, Stadt",DE-HE,Hesse,Hessen,133195,63065,50.105567,8.764442,densely populated
+DE-06414000,DE,06414000,municipality,"Wiesbaden, Landeshauptstadt",06414,"Wiesbaden, Landeshauptstadt",DE-HE,Hesse,Hessen,288584,65183,50.081698,8.239138,densely populated
+DE-06611000,DE,06611000,municipality,"Kassel, documenta-Stadt",06611,"Kassel, documenta-Stadt",DE-HE,Hesse,Hessen,196799,34117,51.314684,9.495199,densely populated
+DE-07111000,DE,07111000,municipality,"Koblenz, Stadt",07111,"Koblenz, kreisfreie Stadt",DE-RP,Rhineland-Palatinate,Rheinland-Pfalz,113020,56068,50.359516,7.597956,densely populated
+DE-07211000,DE,07211000,municipality,"Trier, Stadt",07211,"Trier, kreisfreie Stadt",DE-RP,Rhineland-Palatinate,Rheinland-Pfalz,105054,54290,49.757603,6.638021,densely populated
+DE-07312000,DE,07312000,municipality,"Kaiserslautern, Stadt",07312,"Kaiserslautern, kreisfreie Stadt",DE-RP,Rhineland-Palatinate,Rheinland-Pfalz,100247,67657,49.445456,7.768864,densely populated
+DE-07314000,DE,07314000,municipality,"Ludwigshafen am Rhein, Stadt",07314,"Ludwigshafen am Rhein, kreisfreie Stadt",DE-RP,Rhineland-Palatinate,Rheinland-Pfalz,177355,67059,49.483235,8.447899,densely populated
+DE-07315000,DE,07315000,municipality,"Mainz, Stadt",07315,"Mainz, kreisfreie Stadt",DE-RP,Rhineland-Palatinate,Rheinland-Pfalz,223888,55116,50.001959,8.271855,densely populated
+DE-08111000,DE,08111000,municipality,"Stuttgart, Landeshauptstadt",08111,"Stuttgart, Stadtkreis",DE-BW,Baden-Württemberg,Baden-Württemberg,609365,70173,48.775817,9.177734,densely populated
+DE-08121000,DE,08121000,municipality,"Heilbronn, Universitätsstadt",08121,"Heilbronn, Stadtkreis",DE-BW,Baden-Württemberg,Baden-Württemberg,132516,74072,49.140428,9.217953,densely populated
+DE-08212000,DE,08212000,municipality,"Karlsruhe, Stadt",08212,"Karlsruhe, Stadtkreis",DE-BW,Baden-Württemberg,Baden-Württemberg,309247,76133,49.009626,8.405282,densely populated
+DE-08221000,DE,08221000,municipality,"Heidelberg, Stadt",08221,"Heidelberg, Stadtkreis",DE-BW,Baden-Württemberg,Baden-Württemberg,156092,69117,49.410524,8.705543,densely populated
+DE-08222000,DE,08222000,municipality,"Mannheim, Universitätsstadt",08222,"Mannheim, Stadtkreis",DE-BW,Baden-Württemberg,Baden-Württemberg,319536,68159,49.48778,8.466275,densely populated
+DE-08231000,DE,08231000,municipality,"Pforzheim, Stadt",08231,"Pforzheim, Stadtkreis",DE-BW,Baden-Württemberg,Baden-Württemberg,134422,75175,48.891285,8.699166,densely populated
+DE-08311000,DE,08311000,municipality,"Freiburg im Breisgau, Stadt",08311,"Freiburg im Breisgau, Stadtkreis",DE-BW,Baden-Württemberg,Baden-Württemberg,238299,79098,47.994786,7.849877,densely populated
+DE-08415061,DE,08415061,municipality,"Reutlingen, Stadt",08415,Reutlingen,DE-BW,Baden-Württemberg,Baden-Württemberg,119040,72764,48.49208,9.212006,densely populated
+DE-08421000,DE,08421000,municipality,"Ulm, Universitätsstadt",08421,"Ulm, Stadtkreis",DE-BW,Baden-Württemberg,Baden-Württemberg,130288,89073,48.398454,9.990402,densely populated
+DE-09161000,DE,09161000,municipality,Ingolstadt,09161,Ingolstadt,DE-BY,Bavaria,Bayern,140799,85047,48.76542,11.423387,densely populated
+DE-09162000,DE,09162000,municipality,"München, Landeshauptstadt",09162,"München, Landeshauptstadt",DE-BY,Bavaria,Bayern,1505036,80313,48.137683,11.575997,densely populated
+DE-09362000,DE,09362000,municipality,Regensburg,09362,Regensburg,DE-BY,Bavaria,Bayern,151517,93019,49.015249,12.101745,densely populated
+DE-09562000,DE,09562000,municipality,Erlangen,09562,Erlangen,DE-BY,Bavaria,Bayern,116450,91051,49.59508,11.003274,densely populated
+DE-09563000,DE,09563000,municipality,Fürth,09563,Fürth,DE-BY,Bavaria,Bayern,131344,90744,49.478592,10.987404,densely populated
+DE-09564000,DE,09564000,municipality,Nürnberg,09564,Nürnberg,DE-BY,Bavaria,Bayern,531159,90403,49.450938,11.075269,densely populated
+DE-09663000,DE,09663000,municipality,Würzburg,09663,Würzburg,DE-BY,Bavaria,Bayern,133753,97070,49.79393,9.93725,densely populated
+DE-09761000,DE,09761000,municipality,Augsburg,09761,Augsburg,DE-BY,Bavaria,Bayern,301786,86150,48.368384,10.897594,densely populated
+DE-10041100,DE,10041100,municipality,"Saarbrücken, Landeshauptstadt",10041,Regionalverband Saarbrücken,DE-SL,Saarland,Saarland,182859,66111,49.236608,6.995542,densely populated
+DE-11000000,DE,11000000,municipality,"Berlin, Stadt",11000,"Berlin, Stadt",DE-BE,Berlin,Berlin,3700577,10178,52.51767,13.405538,densely populated
+DE-12054000,DE,12054000,municipality,"Potsdam, Stadt",12054,"Potsdam, Stadt",DE-BB,Brandenburg,Brandenburg,185137,14469,52.400355,13.05358,densely populated
+DE-13003000,DE,13003000,municipality,"Rostock, Hanse- und Universitätsstadt",13003,Rostock,DE-MV,Mecklenburg-Western Pomerania,Mecklenburg-Vorpommern,204929,18055,54.088548,12.135993,densely populated
+DE-14511000,DE,14511000,municipality,"Chemnitz, Stadt",14511,"Chemnitz, Stadt",DE-SN,Saxony,Sachsen,247252,09111,50.833593,12.921602,densely populated
+DE-14612000,DE,14612000,municipality,"Dresden, Stadt",14612,"Dresden, Stadt",DE-SN,Saxony,Sachsen,562764,01067,51.051697,13.736883,densely populated
+DE-14713000,DE,14713000,municipality,"Leipzig, Stadt",14713,"Leipzig, Stadt",DE-SN,Saxony,Sachsen,615932,04109,51.338288,12.377931,densely populated
+DE-15002000,DE,15002000,municipality,"Halle (Saale), Stadt",15002,"Halle (Saale), Stadt",DE-ST,Saxony-Anhalt,Sachsen-Anhalt,226186,06108,51.482478,11.970666,densely populated
+DE-15003000,DE,15003000,municipality,"Magdeburg, Landeshauptstadt",15003,"Magdeburg, Landeshauptstadt",DE-ST,Saxony-Anhalt,Sachsen-Anhalt,244494,39104,52.126248,11.632726,densely populated
+DE-16051000,DE,16051000,municipality,"Erfurt, Stadt",16051,"Erfurt, Stadt",DE-TH,Thuringia,Thüringen,217159,99084,50.977122,11.027236,densely populated
+DE-16053000,DE,16053000,municipality,"Jena, Stadt",16053,"Jena, Stadt",DE-TH,Thuringia,Thüringen,109353,07743,50.93006,11.591842,densely populated

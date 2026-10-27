@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: holiday_calendar__region_day
+    description: Every region on every day, fact_calendar_day joined through bridge_region_profile.
+  - name: holiday_calendar__workday
+    description: Working days per calendar profile, for adding working days with a join.
+    data_tests:
+      - trakora_holiday_calendar.unique_combination:
+          columns: [calendar_profile_id, workday_index]

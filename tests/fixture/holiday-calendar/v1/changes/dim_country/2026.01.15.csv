@@ -1,0 +1,2 @@
+country_code,name,name_local,language,timezone,weekend_days,region_type,region_code_name,attribution,_op,_release_seq
+DE,Germany,Deutschland,de,Europe/Berlin,"saturday, sunday",municipality,AGS,"Federal Statistical Office of Germany (Destatis), municipality register and Census 2022",upsert,1

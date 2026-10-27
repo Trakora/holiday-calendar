@@ -6,4 +6,5 @@ java/target/
 spark-warehouse/
 metastore_db/
 *.duckdb
+!tests/fixture/**/*.duckdb
 *.duckdb.wal
